@@ -1,0 +1,281 @@
+﻿@using System.Data;
+@using System.Data.Entity;
+
+@{
+    Layout = null;
+
+    string utm_source = Request.Params["utm_source"];
+}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <title>Dell - 全方位IT 職場加持術</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/css/dell_nav.css">
+    <link rel="stylesheet" href="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/css/dell_fy20q1.css">
+    <link rel="stylesheet" href="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/css/dell_survey.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Roboto:100,400" rel="stylesheet">
+    </head>
+    <body>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '434987007238336');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=434987007238336&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script>
+fbq('track', 'ViewContent', {
+content_type: 'Landingpage',
+});
+</script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Dell全方位IT職場好運符</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-2sbraDAU3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">A Quick Look at Dell Endpoint Security Suite Enterprise</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nGBzqff006U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">大師開講--桌機筆電備份</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDellEMCTaiwan%2Fvideos%2F948600265316350%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- menuBox start -->
+        <div class="menuBox">
+            <div class="menuWrapper">
+                <div class="logoBox">
+                    <a href="index.html" class="logo_dell">
+                        <img src="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/images/logo_dell_intel.png">
+                    </a>
+                    <a href="https://www.facebook.com/DellEMCTaiwan/" class="m-facebook" target="_blank"></a>
+                </div>
+
+            </div>
+        </div>
+        <!-- menuBox End -->
+        <div class="Event_warp">
+            <div class="dell_event_kv">
+                <div class="kv-text">
+                    <p>身為公司的專業頂尖人員，你背負著公司從資安到管理的重大使命</p>
+                    <p>Dell 商用型產品搭配高安全、易備份、好管理工具</p>
+                    <p>三大必備軟體加持，讓你工作環境更順利！</p>
+                </div>
+            </div>
+            <div class="icon-scroll">Scroll</div>
+            <h2 class="event-title">
+                <span>專屬於IT的護身符</span>
+                <p>Dell全方位IT職場好運符</p>
+            </h2>
+            <div class="film film-01">
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><img src="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/images/img_film_01.jpg"></a>
+            </div>
+            <div class="text-center">
+                <p>Dell商用型產品結合三大資安與管理技術，化為IT專屬職場護身符，</p>
+                <p>專程帶去科技人的神廟 - 新竹普天宮過香爐，讓你的職場受到全方位保護與祝福。</p>
+            </div>
+            <div class="charm">
+                <img src="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/images/img_charm.png">
+            </div>
+            <div class="text-center">
+                <p>常常覺得守護安全易管理的職場環境力不從心嗎？</p>
+                <p>你的系統配備足以應付所有的職場問題嗎？</p>
+                <p>Dell設計全方位的職場加持術，三大好運符Ｘ三大職場安全管理系統，打造完全防護術。</p>
+            </div>
+            <a onClick="fbq('track', 'Purchase', { content_type: '現在填表單開始祈福' });" href="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/survey.html?utm_source=@(utm_source)" class="button-survey">現在填表單開始祈福</a>
+            <div class="intro-block">
+                <!-- group1 -->
+                <div class="intro-group group1" id="backup">
+                    <div class="group-text">
+                        <h3>
+                            搭載Dell Endpoint 安全套件企業版：
+                            <a href="#!" class="FL" data-toggle="modal" data-target="#exampleModalCenter2" onclick="fbq('track', 'ViewContent', { content_type: '搭載Dell Endpoint' });">觀看介紹影片</a>
+                        </h3>
+                        <ul>
+                            <li>內建企業級加密功能－集中式檔案層級加密管理。</li>
+                            <li>具備Cylance智慧型防護工具 - 透過人工智慧(AI) 和機器學習(ML)防止99％以上的惡意軟體	    威脅；還有低至4%的CPU利用率，少量儲存空間及電力即可運行。</li>
+                            <li>BIOS檢測功能 - 在用戶端開機過程中自動偵測，預警功能讓IT人員主動出擊，保護公司安全更輕鬆。</li>
+                        </ul>
+                        <span class="notice-text">* BIOS檢測功能：此功能僅限於特定商用機型。</span>
+                        <a onClick="fbq('track', 'AddToWishlist', { content_type: '搭載Dell Endpoint' });" href="https://www.dellemc.com/zh-tw/collaterals/unauth/brochures/products/data-protection/dell_endpoint_security_suite_enterprise_v1.8.pdf" target="_blank" class="FL">下載白皮書暸解更多</a>
+                        <h3>
+                            搭配RSA SecurID® Access：
+                        </h3>
+                        <p class="intro-normal-text">使用雙重高級身分驗證，可降低容易破解之密碼所產生的系統漏洞，讓任何用戶安全地存取雲端與用戶端系統及資料，全方位打造安全使用環境。</p>
+                        
+                        <a onClick="fbq('track', 'AddToWishlist', { content_type: '搭配RSA SecurID' });" href="https://www.dellemc.com/zh-tw/collaterals/unauth/briefs-handouts/solutions/rsa-securid-suite.pdf" target="_blank" class="FL">下載白皮書暸解更多</a>
+                    </div>
+                </div>
+                <!-- group2 -->
+                <div class="intro-group group2" id="secure">
+                    <div class="group-text">
+                        <p class="text-aline">
+                            <span>Dell EMC Avamar</span>
+                            重複資料刪除備份軟體，先進的重複資料刪除技術，可將資料壓縮95%-98%，縮短備份時間、節省備份頻寬、減少磁碟使用空間，還有獨家每天全備份技術，助你資料快速還原，業務營運不中斷。
+                        </p>
+                        <a onClick="fbq('track', 'ViewContent', { content_type: 'Dell EMC Avamar' });" href="#!" data-toggle="modal" data-target="#exampleModalCenter3">觀看介紹影片</a>
+                    </div>
+                </div>
+                <!-- group3 -->
+                <div class="intro-group group3" id="vmware">
+                    <div class="group-text">
+                        <p class="text-aline">搭載 <span>VMware Workspace ONE</span>，統一端點管理和單一登入(SSO)存取管理技術，簡化管理流程，能以雲端服務形式或是針對內部部署來提供服務，還可一鍵派送軟體，遠端偵測威脅並進行補丁，為不斷進化的數位工作區提供安全保障。</p>
+                        <a onClick="fbq('track', 'AddToWishlist', { content_type: '搭載 VMware Workspace ONE' });" href="download/Dell_Provisioning_for_VMware_WorkspaceONE_datasheet(2018).pdf" target="_blank">下載白皮書暸解更多</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-text">
+                <h2 class="event-title">
+                    <span>全面提升工作環境</span>
+                    <p>Dell 商用型產品</p>
+                </h2>
+                <p class="more">暸解更多請下載<a onClick="fbq('track', 'AddToWishlist', { content_type: '2019 戴爾商⽤用產品介紹' });" href="http://www.digital-transformation.com.tw/dlfile/%E6%88%B4%E7%88%BE%E5%95%86%E7%94%A8%E5%9E%8B%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9_2019March.pdf" target="_blank">2019戴爾商用型產品介紹</a>或上<a onClick="fbq('track','Lead');" href="https://www.dell.com/tw/business/p?~ck=mn" target="_blank">Dell官網</a>查詢</p>
+            </div>
+
+            <div class="bg-bottom">
+                <h2 class="event-title">
+                    <p>想了解更多Dell全方位IT職場加持術？</p>
+                    <span class="font-20">即日起至4/16，填問卷立即送Dell職場好運符，幫你的工作環境祈福</span>
+                    <span class="font-16">
+                        * 限量100名（限符合資格之參加者，主辦單位保留審核得獎資格之權利）
+                    </span>
+                </h2>
+                <div class="img-charm-s">
+                    <img src="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/images/img_charm_s.jpg">
+                </div>
+
+                <a onClick="fbq('track', 'Purchase', { content_type: '點擊填寫申請問卷' });" href="https://www.digital-transformation.com.tw/ClientSolution/FY20Q1/survey.html?utm_source=@(utm_source)" class="button-survey button-normal">點擊填寫申請問卷</a>
+            </div>
+
+        </div>
+        <!-- footer start -->
+        <footer>
+            <div class="warp_block">
+                <div class="contact-block">
+                    <div class="contact">
+                        <p>欲了解更多詳情，歡迎來電或查詢官網</p>
+                        <p>00801-863-051 / www.dell.com</p>
+                    </div>
+                    <a onClick="fbq('track', 'StartTrial');" href="https://www.facebook.com/DellEMCTaiwan/" target="_blank" class="btn_facebook"></a>
+                </div>
+                <p class="copyright">
+                    Dell<sup>®</sup> / EMC<sup>®</sup> / Dell EMC<sup>®</sup> 等品牌商標將可能同時出現在戴爾易安信相關企業級產品 (包括硬體和軟體)、產品相關資料及戴爾易安信官方網站。如果您對戴爾易安信產品有任何疑問，請聯繫您的銷售代表。
+                    戴爾的條款和條件在此適用並可網上獲得或致函索取。戴爾會盡力排除報價錯誤或其它錯誤，但仍可能有錯誤。戴爾保留拒絕任何包含錯誤資訊訂單的權利。圖片僅供參考。請點擊這裡獲得更多資訊。Ultrabook、Celeron、Celeron Inside、Core Inside、Intel、Intel 圖誌、Intel Atom、Intel Atom Inside、Intel Core、Intel Inside、Intel Inside 圖誌、Intel vPro、Itanium、Itanium Inside、Pentium、Pentium Inside、vPro Inside、Xeon、Xeon Phi、Xeon Inside 和 Intel Optane 是 Intel Corporation 或其子公司在美國和/或其它國家的商標。 <br>
+                    著作權為戴爾科技集團及其成員公司所有©2019 Dell Inc.或其子公司。保留所有權利。戴爾、戴爾標誌、Dell Technologies, Dell, EMC, Dell EMC和其他商標是Dell Inc.或其子公司的商標。其他商標權益歸屬其商標所有者所有。
+                </p>
+            </div>
+        </footer>
+        <!-- footer End -->
+        <!-- Button-chat start -->
+        <a class="Button-chat" href="http://smarturl.it/dell_landing" target="_blank">
+            <div class="chat-button"></div>
+            <div class="pulse"></div>
+            <p>
+                線上互動
+                <br>
+                <span>最新訊息一網打盡</span>
+            </p>
+        </a>
+        <!-- Button-chat End -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+      if (scroll > 0) {
+        $(".menuBox").css("background" , "#0076CE");
+      }
+
+      else{
+          $(".menuBox").css("background" , "transparent");      
+      }
+  })
+
+})
+</script>
+    </body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108045445-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108045445-6');
+</script>
